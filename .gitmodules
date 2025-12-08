@@ -1,0 +1,3 @@
+[submodule "meta-deegle"]
+	path = meta-deegle
+	url = git@github.com:deegle-linux/meta-deegle.git
