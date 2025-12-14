@@ -1,0 +1,36 @@
+header:
+  version: 19
+
+machine: qemuarm64
+distro: poky
+target: core-image-minimal
+
+local_conf_header:
+  debug: |
+    IMAGE_FEATURES:append = " debug-tweaks "
+
+defaults:
+  repos:
+    branch: "scarthgap"
+
+repos:
+  layers/poky:
+    url: "https://git.yoctoproject.org/git/poky.git"
+    layers:
+      meta:
+      meta-poky:
+      meta-yocto-bsp:
+
+  layers/meta-openembedded:
+    url: "https://github.com/openembedded/meta-openembedded.git"
+    layers:
+      meta-filesystems:
+      meta-gnome:
+      meta-initramfs:
+      meta-multimedia:
+      meta-networking:
+      meta-oe:
+      meta-perl:
+      meta-python:
+      meta-webserver:
+      meta-xfce:

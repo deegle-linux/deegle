@@ -1,0 +1,43 @@
+header:
+  version: 19
+
+machine: beaglebone
+distro: poky
+target: core-image-minimal
+
+local_conf_header:
+  debug: |
+    IMAGE_FEATURES:append = " debug-tweaks "
+
+defaults:
+  repos:
+    branch: "scarthgap"
+
+repos:
+  layers/poky:
+    url: "https://git.yoctoproject.org/git/poky.git"
+    layers:
+      meta:
+      meta-poky:
+      meta-yocto-bsp:
+
+  layers/meta-openembedded:
+    url: "https://github.com/openembedded/meta-openembedded.git"
+    layers:
+      meta-filesystems:
+      meta-gnome:
+      meta-initramfs:
+      meta-multimedia:
+      meta-networking:
+      meta-oe:
+      meta-perl:
+      meta-python:
+      meta-webserver:
+      meta-xfce:
+
+  layers/meta-ti:
+    url: "https://git.yoctoproject.org/git/meta-ti.git"
+    layers:
+      meta-beagle:
+      meta-ti-bsp:
+      meta-ti-extras:
