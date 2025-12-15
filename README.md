@@ -24,5 +24,10 @@ To prepare a virtual Python environment providing `kas` and all other used tool 
 To build and image, do:
 
 - Activate the virtual Python environment: `source venv/bin/activate`
-- Run the `kas` build: `kas build <name>.yml`
+- Run the `kas` build: `kas build conf/<name>.yml`
+
+## Flash the images
+
+- PocketBeagle2: `sudo bmaptool copy build/deploy-ti/images/pocketbeagle2/core-image-minimal-pocketbeagle2.rootfs.wic.xz <device>`
+- BeagleBone Black: `sudo bmaptool copy build/deploy-ti/images/beaglebone/core-image-minimal-beaglebone.rootfs.wic.xz <device>`
 

@@ -1,0 +1,9 @@
+header:
+  version: 19
+  includes:
+    - conf/shared/common.yml
+    - conf/shared/debug.yml
+
+machine: beaglebone
+distro: ddeegle
+target: deegle-base-image

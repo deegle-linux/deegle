@@ -1,0 +1,9 @@
+header:
+  version: 19
+  includes:
+    - conf/shared/common.yml
+    - conf/shared/debug.yml
+
+machine: pocketbeagle2
+distro: ddeegle
+target: deegle-ros2-image
