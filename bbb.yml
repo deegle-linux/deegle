@@ -35,6 +35,13 @@ repos:
       meta-webserver:
       meta-xfce:
 
+  layers/meta-arm:
+    url: "https://git.yoctoproject.org/git/meta-arm"
+    layers:
+      meta-arm:
+      meta-arm-toolchain:
+      meta-arm-bsp:
+
   layers/meta-ti:
     url: "https://git.yoctoproject.org/git/meta-ti.git"
     layers:
