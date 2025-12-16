@@ -28,6 +28,6 @@ To build and image, do:
 
 ## Flash the images
 
-- PocketBeagle2: `sudo bmaptool copy build/deploy-ti/images/pocketbeagle2/core-image-minimal-pocketbeagle2.rootfs.wic.xz <device>`
-- BeagleBone Black: `sudo bmaptool copy build/deploy-ti/images/beaglebone/core-image-minimal-beaglebone.rootfs.wic.xz <device>`
+- PocketBeagle2: `sudo bmaptool copy build/deploy-ti/images/pocketbeagle2/deegle-base-image-pocketbeagle2.rootfs.wic.xz <device>`
+- BeagleBone Black: `sudo bmaptool copy build/deploy-ti/images/beaglebone/deegle-base-image-beaglebone.rootfs.wic.xz <device>`
 

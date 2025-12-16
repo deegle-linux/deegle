@@ -7,5 +7,6 @@ jsonschema-specifications==2025.9.1
 kas==5.1
 PyYAML==6.0.3
 referencing==0.37.0
+robotframework==7.4
 rpds-py==0.30.0
 smmap==5.0.2

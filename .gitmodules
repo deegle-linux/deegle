@@ -1,3 +1,6 @@
 [submodule "meta-deegle"]
 	path = meta-deegle
 	url = git@github.com:deegle-linux/meta-deegle.git
+[submodule "docs"]
+	path = docs
+	url = git@github.com:deegle-linux/deegle-linux.github.io.git
